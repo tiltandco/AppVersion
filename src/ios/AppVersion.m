@@ -22,7 +22,7 @@
 */
 @implementation AppVersion
 
-- (void)echoTest {
+- (void)get {
     CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }

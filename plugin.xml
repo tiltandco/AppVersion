@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="com.neophob.cordova.core.appversion"
+    id="com.tiltandco.appversion"
     version="0.1.0">
 
     <name>AppVersion</name>
-    <description>Cordova Plugin Sekelton</description>
+    <description>Application version number getter.</description>
     <license>Apache 2.0</license>
     <keywords>cordova,plugin,skeleton</keywords>
 

@@ -21,7 +21,6 @@
 
 @interface AppVersion : CDVPlugin
 
-- (void)pluginInitialize;
-- (void)echoTest;
+- (void)get;
   	
 @end
