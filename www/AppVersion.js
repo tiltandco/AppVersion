@@ -4,17 +4,13 @@ var exec = require('cordova/exec');
 
 function AppVersion() {}
 
-AppVersion.prototype.get = function(str) {
-    exec(
-
-    function(reply) {
-    	console.log('Response ' + reply);
-        callback('ok: ' + reply);
-    }, function(err) {
-        callback('Error: ' + err);
-    }, "AppVersion", "get", [str]);
+AppVersion.prototype.get = function(success, fail) {
+    exec(success, fail, "AppVersion", "get", []);
 };
 
-
-var appversion = new AppVersion();
-module.exports = appversion;
+if(!window.plugins) {
+    window.plugins = {};
+}
+if (!window.plugins.appVersion) {
+    window.plugins.appVersion = new AppVersion();
+}
