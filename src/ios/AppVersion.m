@@ -22,8 +22,9 @@
 */
 @implementation AppVersion
 
-- (void)get {
+- (void)get:(CDVInvokedUrlCommand*)command {
     CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]];
+    NSLog(@"%@", [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]);
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
