@@ -9,7 +9,7 @@
     <license>Apache 2.0</license>
     <keywords>cordova,plugin,skeleton</keywords>
 
-    <js-module src="www/AppVersion.js" name="AppVersion">
+    <js-module src="AppVersion.js" name="AppVersion">
         <clobbers target="appversion" />
     </js-module>
 
@@ -21,7 +21,7 @@
             </feature>
         </config-file>
         <!-- copy plugin and supporting files -->
-        <source-file src="src/android/src/com/tiltandco/appversion" target-dir="src/com/tiltandco" />
+        <source-file src="android/appversion" target-dir="src/com/tiltandco" />
       
      </platform>
 
@@ -34,8 +34,8 @@
             </feature>
         </config-file>
 
-        <header-file src="src/ios/AppVersion.h" />
-        <source-file src="src/ios/AppVersion.m" />
+        <header-file src="ios/AppVersion.h" />
+        <source-file src="ios/AppVersion.m" />
         
     </platform>
 
