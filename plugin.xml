@@ -9,6 +9,10 @@
     <license>Apache 2.0</license>
     <keywords>cordova,plugin,skeleton</keywords>
 
+    <js-module src="www/AppVersion.js" name="AppVersion">
+        <clobbers target="appversion" />
+    </js-module>
+
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
@@ -29,10 +33,6 @@
                 <param name="onload" value="true" />
             </feature>
         </config-file>
-
-        <js-module src="www/AppVersion.js" name="AppVersion">
-            <clobbers target="appversion" />
-        </js-module>
 
         <header-file src="src/ios/AppVersion.h" />
         <source-file src="src/ios/AppVersion.m" />
