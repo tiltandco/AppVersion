@@ -1,0 +1,16 @@
+{
+  "name": "AppVersion",
+  "version": "1.0.1",
+  "description": "App Version",
+  "cordova": {
+    "platforms": [
+      "android",
+      "ios",
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tiltandco/AppVersion"
+  },
+  "author": "Tilt+Co",
+}
