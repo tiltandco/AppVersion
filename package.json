@@ -5,7 +5,7 @@
   "cordova": {
     "platforms": [
       "android",
-      "ios",
+      "ios"
     ],
   },
   "repository": {
@@ -13,4 +13,5 @@
     "url": "https://github.com/tiltandco/AppVersion"
   },
   "author": "Tilt+Co",
+  "license": "Apache-2.0"
 }
